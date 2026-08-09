@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 1 - Network Packet Analyzer</title>
+
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family:Arial, Helvetica, sans-serif;
+        }
+
+        body{
+            background:#f4f7fc;
+            color:#333;
+        }
+
+        header{
+            background:#0d47a1;
+            color:white;
+            padding:30px;
+            text-align:center;
+        }
+
+        header h1{
+            font-size:40px;
+        }
+
+        header p{
+            margin-top:10px;
+            font-size:18px;
+        }
+
+        .container{
+            width:90%;
+            max-width:1100px;
+            margin:30px auto;
+        }
+
+        .card{
+            background:white;
+            padding:25px;
+            margin-bottom:20px;
+            border-radius:10px;
+            box-shadow:0 0 10px rgba(0,0,0,0.1);
+        }
+
+        h2{
+            color:#0d47a1;
+            margin-bottom:15px;
+        }
+
+        ul{
+            margin-left:20px;
+            line-height:1.8;
+        }
+
+        table{
+            width:100%;
+            border-collapse:collapse;
+            margin-top:15px;
+        }
+
+        table,th,td{
+            border:1px solid #ccc;
+        }
+
+        th{
+            background:#0d47a1;
+            color:white;
+            padding:10px;
+        }
+
+        td{
+            padding:10px;
+        }
+
+        footer{
+            background:#0d47a1;
+            color:white;
+            text-align:center;
+            padding:15px;
+            margin-top:30px;
+        }
+
+        .button{
+            display:inline-block;
+            background:#0d47a1;
+            color:white;
+            padding:12px 20px;
+            text-decoration:none;
+            border-radius:5px;
+            margin-top:15px;
+        }
+
+        .button:hover{
+            background:#1565c0;
+        }
+    </style>
+
+</head>
+
+<body>
+
+<header>
+    <h1>Network Packet Analyzer</h1>
+    <p>Task 1 - Cyber Security Mini Project</p>
+</header>
+
+<div class="container">
+
+<div class="card">
+<h2>Project Description</h2>
+
+<p>
+A Network Packet Analyzer is a Python application that captures network packets,
+inspects them, and displays important information such as Source IP,
+Destination IP, Protocol Type, Ports, Packet Length, and Payload.
+It helps users understand how network communication works.
+</p>
+
+</div>
+
+<div class="card">
+
+<h2>Objectives</h2>
+
+<ul>
+<li>Capture network packets.</li>
+<li>Analyze network traffic.</li>
+<li>Display Source and Destination IP.</li>
+<li>Identify TCP, UDP and ICMP protocols.</li>
+<li>Display packet payload.</li>
+<li>Understand network communication.</li>
+</ul>
+
+</div>
+
+<div class="card">
+
+<h2>Technologies Used</h2>
+
+<table>
+
+<tr>
+<th>Technology</th>
+<th>Purpose</th>
+</tr>
+
+<tr>
+<td>Python</td>
+<td>Main Programming Language</td>
+</tr>
+
+<tr>
+<td>Scapy</td>
+<td>Packet Capturing Library</td>
+</tr>
+
+<tr>
+<td>HTML</td>
+<td>Static Web Page</td>
+</tr>
+
+<tr>
+<td>CSS</td>
+<td>Website Styling</td>
+</tr>
+
+</table>
+
+</div>
+
+<div class="card">
+
+<h2>Packet Information</h2>
+
+<table>
+
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+
+<tr>
+<td>Source IP</td>
+<td>Sender IP Address</td>
+</tr>
+
+<tr>
+<td>Destination IP</td>
+<td>Receiver IP Address</td>
+</tr>
+
+<tr>
+<td>Protocol</td>
+<td>TCP / UDP / ICMP</td>
+</tr>
+
+<tr>
+<td>Source Port</td>
+<td>Sending Port</td>
+</tr>
+
+<tr>
+<td>Destination Port</td>
+<td>Receiving Port</td>
+</tr>
+
+<tr>
+<td>Packet Length</td>
+<td>Packet Size</td>
+</tr>
+
+<tr>
+<td>Payload</td>
+<td>Packet Data</td>
+</tr>
+
+</table>
+
+</div>
+
+<div class="card">
+
+<h2>Project Workflow</h2>
+
+<ol style="margin-left:25px; line-height:2;">
+<li>Capture packets using Scapy.</li>
+<li>Extract packet information.</li>
+<li>Analyze protocols.</li>
+<li>Display packet details.</li>
+<li>Monitor network traffic.</li>
+</ol>
+
+<a href="#" class="button">Learn More</a>
+
+</div>
+
+</div>
+
+<footer>
+
+<p>
+© 2026 Network Packet Analyzer Project | Developed using HTML, CSS & Python
+</p>
+
+</footer>
+
+</body>
+</html>
