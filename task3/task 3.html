@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Secure Code Assessment</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#eef3ff;
+    color:#222;
+}
+
+header{
+    background:#004aad;
+    color:#fff;
+    text-align:center;
+    padding:25px;
+}
+
+header h1{
+    font-size:48px;
+    letter-spacing:2px;
+}
+
+header p{
+    margin-top:10px;
+    font-size:18px;
+}
+
+.container{
+    width:90%;
+    max-width:1200px;
+    margin:30px auto;
+}
+
+.section{
+    background:#fff;
+    margin-bottom:25px;
+    padding:25px;
+    border-radius:10px;
+    box-shadow:0 4px 10px rgba(0,0,0,.15);
+}
+
+.section h2{
+    color:#004aad;
+    margin-bottom:15px;
+}
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+}
+
+.card{
+    background:#f5f9ff;
+    border-left:5px solid #004aad;
+    padding:20px;
+    border-radius:8px;
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-5px);
+    box-shadow:0 5px 12px rgba(0,0,0,.2);
+}
+
+.card h3{
+    color:#003366;
+    margin-bottom:10px;
+}
+
+.card ul{
+    margin-left:18px;
+    line-height:1.8;
+}
+
+table{
+    width:100%;
+    border-collapse:collapse;
+    margin-top:15px;
+}
+
+table th{
+    background:#004aad;
+    color:white;
+}
+
+table th,table td{
+    border:1px solid #ccc;
+    padding:12px;
+    text-align:left;
+}
+
+.note{
+    margin-top:20px;
+    background:#e8f7e8;
+    border-left:5px solid green;
+    padding:15px;
+}
+
+footer{
+    background:#003366;
+    color:white;
+    text-align:center;
+    padding:20px;
+    margin-top:30px;
+}
+</style>
+
+</head>
+
+<body>
+
+<header>
+<h1>SECURE CODE ASSESSMENT</h1>
+<p>Static Website - Cyber Security Project</p>
+</header>
+
+<div class="container">
+
+<div class="section">
+<h2>Project Objective</h2>
+
+<p>
+Secure Code Assessment is the process of reviewing application source code
+to identify vulnerabilities, coding flaws, and security risks before deployment.
+It helps developers build secure, reliable, and attack-resistant software.
+</p>
+
+</div>
+
+<div class="section">
+
+<h2>Assessment Steps</h2>
+
+<div class="cards">
+
+<div class="card">
+<h3>1. Choose an Application</h3>
+
+<ul>
+<li>Select a Java, Python, C++, PHP or Web application.</li>
+<li>Collect the complete source code.</li>
+<li>Understand the application architecture.</li>
+</ul>
+
+</div>
+
+<div class="card">
+
+<h3>2. Review Source Code</h3>
+
+<ul>
+<li>Search for SQL Injection.</li>
+<li>Check Cross-Site Scripting (XSS).</li>
+<li>Look for weak authentication.</li>
+<li>Review file upload security.</li>
+</ul>
+
+</div>
+
+<div class="card">
+
+<h3>3. Static Code Analysis</h3>
+
+<ul>
+<li>Use SonarQube</li>
+<li>Use ESLint</li>
+<li>Use Bandit (Python)</li>
+<li>Use PMD or Checkstyle (Java)</li>
+</ul>
+
+</div>
+
+<div class="card">
+
+<h3>4. Secure Coding Practices</h3>
+
+<ul>
+<li>Validate user input.</li>
+<li>Use parameterized SQL queries.</li>
+<li>Encrypt sensitive data.</li>
+<li>Apply least privilege access.</li>
+</ul>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="section">
+
+<h2>Common Vulnerabilities</h2>
+
+<table>
+
+<tr>
+<th>Vulnerability</th>
+<th>Description</th>
+<th>Recommended Fix</th>
+</tr>
+
+<tr>
+<td>SQL Injection</td>
+<td>Malicious SQL queries are executed.</td>
+<td>Use Prepared Statements.</td>
+</tr>
+
+<tr>
+<td>Cross-Site Scripting (XSS)</td>
+<td>JavaScript injected into web pages.</td>
+<td>Validate and encode user input.</td>
+</tr>
+
+<tr>
+<td>Weak Password Storage</td>
+<td>Passwords stored in plain text.</td>
+<td>Hash passwords using bcrypt.</td>
+</tr>
+
+<tr>
+<td>Broken Authentication</td>
+<td>Unauthorized user access.</td>
+<td>Enable Multi-Factor Authentication.</td>
+</tr>
+
+<tr>
+<td>Hardcoded Credentials</td>
+<td>Passwords inside source code.</td>
+<td>Use Environment Variables.</td>
+</tr>
+
+</table>
+
+</div>
+
+<div class="section">
+
+<h2>Recommended Security Tools</h2>
+
+<ul style="margin-left:20px; line-height:2;">
+<li>SonarQube</li>
+<li>OWASP ZAP</li>
+<li>Bandit (Python)</li>
+<li>PMD</li>
+<li>Checkstyle</li>
+<li>ESLint</li>
+<li>FindSecBugs</li>
+</ul>
+
+<div class="note">
+<b>Best Practice:</b> Perform regular code reviews, keep software updated,
+validate all user inputs, implement secure authentication, and follow the
+OWASP Secure Coding Guidelines.
+</div>
+
+</div>
+
+</div>
+
+<footer>
+
+<p>
+© 2026 Secure Code Assessment Project | Cyber Security Awareness
+</p>
+
+</footer>
+
+</body>
+</html>
